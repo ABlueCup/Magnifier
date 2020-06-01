@@ -1,0 +1,42 @@
+@import "reset";
+
+.magnifier-box{
+    position: relative;
+    height: 430px;
+    margin-top: 80px;
+    .smallBox{
+        position: absolute;
+        width: 430px;
+        height: 430px;
+        top: 0;
+        left: 20px;
+        overflow: hidden;
+        .mark{
+            z-index: 9;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background: rgba(120, 0, 120, .6);
+            cursor: move;
+            display: none;
+        }
+    }
+    .bigBox{
+        display: none;
+        position: absolute;
+        width: 430px;
+        height: 430px;
+        top: 0;
+        left: 480px;
+        overflow: hidden;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1849px;
+            height: 1849px;
+        }
+    }
+}
